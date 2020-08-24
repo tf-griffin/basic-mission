@@ -1,0 +1,69 @@
+author			= "1stLt Oscar M.";	// You may wanna change that
+onLoadName		= "Point Insertion";	// Obv you will change this
+onLoadMission	= "A group of NATO soldiers is tasked with sabotaging a coastal defense.";
+loadScreen		= "images\loadScreen.paa";
+
+class Header
+{
+	gameType =  Coop;	// Game type
+	minPlayers =  1;	// minimum number of players the mission supports
+	maxPlayers = 32;	// maximum number of players the mission supports
+};
+
+
+// Respawn Base: respawn at marker: respawn_<SIDE>
+// if there was no marker it will be INSTANT (respawn where you died)
+respawn = "BASE";
+respawnDelay = 15;
+// Respawn player when he joins the game
+respawnOnStart = -1; // Default: 0
+
+
+showHUD[] = {
+	1,	// Scripted HUD (same as showHUD command)
+	0,	// Vehicle and unit info
+	0,	// Vehicle radar [HIDDEN]
+	0,	// Vehicle compass [HIDDEN]
+	0,	// Tank direction indicator
+	0,	// Commanding menu
+	0,	// Group info bar
+	0,	// HUD weapon cursors
+	0,	// Vehicle display panels
+	0	// "x killed by y" systemChat messages
+};
+
+disabledAI = 1;
+enableDebugConsole = 1;
+
+
+class CfgUnitInsignia {
+	class tfg_recon {
+		displayName = "TF GRIFFIN RECON";
+		author = "Lt Oscar";
+		texture = "ui\tfg_recon.paa";
+	};
+	class tfg_soc {
+		displayName = "TF GRIFFIN SOC";
+		author = "Lt Oscar";
+		texture = "ui\tfg_soc.paa";
+	};
+	class tfg_eg_so {
+		displayName = "TF-G EGYPT SO";
+		author = "Lt Oscar";
+		texture = "ui\tfg_eg-so.paa";
+	};
+	class tfg_df {
+		displayName = "TF-G DF";
+		author = "Lt Oscar";
+		texture = "ui\tfg_df.paa";
+	};
+	class dick_butt_ocp {
+		displayName = "Dick Butt OCP";
+		author = "Lt Oscar";
+		texture = "ui\dick_butt_ocp_ca.paa";
+	};
+};
+
+class ACE_Settings {
+    // Add exported settings here
+};
