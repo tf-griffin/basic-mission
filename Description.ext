@@ -3,6 +3,8 @@ onLoadName		= "Point Insertion";	// Obv you will change this
 onLoadMission	= "A group of NATO soldiers is tasked with sabotaging a coastal defense.";
 loadScreen		= "images\loadScreen.paa";
 
+cba_settings_hasSettingsFile = 1;	//  ignored by default
+
 class Header
 {
 	gameType =  Coop;	// Game type
@@ -66,4 +68,6 @@ class CfgUnitInsignia {
 
 class ACE_Settings {
     // Add exported settings here
+
+
 };
