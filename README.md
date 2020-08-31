@@ -9,3 +9,6 @@ Edit the files
 
 ### Notes
 ACE 3 Settings not 100% complete
+
+### Custom Loadouts
+tfg_loadouts.VR
